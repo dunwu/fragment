@@ -41,6 +41,28 @@ blockquote {
   border-radius: 16px;
 }
 
+.cnblogs_code {
+  background-color: #FFFFE5 !important;
+  border-radius: 10px;
+}
+
+.cnblogs_code div {
+  background-color: #FFFFE5 !important;
+}
+
+.cnblogs-markdown code {
+  background-color: #FFFFE5 !important;
+}
+
+#cnblogs_post_body th, .cnblogs-post-body th {
+  background-color: #C4E1B6 !important;
+  font-weight: bold;
+}
+
+#cnblogs_post_body td, .cnblogs-post-body td {
+  background-color: #FFFFE5 !important;
+}
+
 /**************************************************************************
   header style
 **************************************************************************/
@@ -58,13 +80,15 @@ blockquote {
   text-decoration: none;
 }
 
-#blogTitle .title h1 {
-  font-size: 16px;
+#Header1_HeaderTitle {
+  font-size: 24px;
+  color: #DE6F64;
+  font-family: "隶书", serif;
 }
 
-#blogTitle .subtitle h2 {
-  font-size: 10px;
-  color: #999999;
+#blogTitle h2 {
+  font-size: 18px;
+  font-family: Brush Script MT, serif, "微软雅黑";
 }
 
 /**
@@ -121,7 +145,7 @@ blockquote {
 }
 
 .day {
-  border: 1px solid #D9DBE1;
+  border: 1px solid #CCCCCC;
   border-radius: 16px;
   margin: 20px 0px;
 }
@@ -134,14 +158,14 @@ blockquote {
 /* article list - article title */
 .postTitle {
   padding: 10px 0 10px 20px;
-  border-bottom: 1px solid #D9DBE1;
+  border-bottom: 1px solid #CCCCCC;
   font-size: 20px;
   font-weight: bold;
 }
 
 .postCon {
   padding: 20px 20px 20px;
-  border-bottom: 1px solid #D9DBE1;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 .postDesc {
@@ -167,16 +191,15 @@ blockquote {
 }
 
 #sideBarMain {
-  padding-left: 8px;
   margin-top: 20px;
 }
 
 #sideBar h3 {
-  padding-left: 8px;
+  padding-left: 10px;
 }
 
 #sideBar h3, #MyIng .ing_title {
-  margin: 16px 0 0 -8px;
+  margin: 10px 0 10px 0;
   font-size: 14px;
   text-align: left;
 }
@@ -193,16 +216,11 @@ h3.catListTitle {
 }
 
 #footer {
-  background: #E8E8E8;
-  border: 1px solid #D9DBE1;
-  border-width: 1px;
   height: 60px;
   line-height: 60px;
   color: #586F76;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 5px;
-  padding-top: 10px;
+  padding: 10px 5px 0 15px;
   border-radius: 8px 8px 8px 8px;
 }
 
@@ -210,8 +228,9 @@ h3.catListTitle {
   article content style
 **************************************************************************/
 .postBody {
-  padding: 0 20px 10px;
+  padding: 10px 20px 10px;
   border-bottom: 1px solid #D9DBE1;
+  background-color: #FCFCFA;
 }
 
 .feedbackItem {
