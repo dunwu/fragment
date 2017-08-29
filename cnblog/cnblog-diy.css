@@ -1,0 +1,284 @@
+/**************************************************************************
+  element style
+**************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #586F76;
+  background: #FDF6E3;
+  font-family: Verdana, Arial, Helvetica, sans-serif, "微软雅黑";
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+a {
+  color: #399AB2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FE4165;
+}
+
+img {
+  border: none;
+  border-radius: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 13px;
+}
+
+blockquote {
+  background-color: #AED7ED;
+  border-radius: 16px;
+}
+
+/**************************************************************************
+  header style
+**************************************************************************/
+/**
+ * blogTitle
+ */
+#home {
+  margin: 0px auto;
+  text-align: left;
+  max-width: 1200px;
+}
+
+#blogTitle {
+  padding: 16px;
+  text-decoration: none;
+}
+
+#blogTitle .title h1 {
+  font-size: 16px;
+}
+
+#blogTitle .subtitle h2 {
+  font-size: 10px;
+  color: #999999;
+}
+
+/**
+ * navigator
+ */
+#navigator {
+  background: #E8E8E8;
+  border: 1px solid #D9DBE1;
+  border-width: 1px;
+  height: 40px;
+  line-height: 40px;
+  color: #999;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 2px;
+  border-radius: 8px;
+}
+
+#navList {
+  float: left;
+}
+
+#navList li {
+  float: none;
+  display: inline;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/**
+ * blogStats
+ */
+.blogStats {
+  float: right;
+  color: #999;
+  margin-right: 16px;
+}
+
+/**************************************************************************
+  main content style
+**************************************************************************/
+#mainContent {
+  margin-left: auto;
+  width: 78%;
+  float: right;
+}
+
+/**************************************************************************
+  article list
+**************************************************************************/
+.forFlow {
+  margin: auto;
+}
+
+.day {
+  border: 1px solid #D9DBE1;
+  border-radius: 16px;
+  margin: 20px 0px;
+}
+
+/* article list - post date */
+.dayTitle {
+  display: none;
+}
+
+/* article list - article title */
+.postTitle {
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid #D9DBE1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.postCon {
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid #D9DBE1;
+}
+
+.postDesc {
+  padding-right: 20px;
+}
+
+.postDesc, .entrylistItemPostDesc {
+  color: #999;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/**************************************************************************
+  sidebar style
+**************************************************************************/
+#sideBar {
+  width: 20%;
+  float: left;
+  border: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+#sideBarMain {
+  padding-left: 8px;
+  margin-top: 20px;
+}
+
+#sideBar h3 {
+  padding-left: 8px;
+}
+
+#sideBar h3, #MyIng .ing_title {
+  margin: 16px 0 0 -8px;
+  font-size: 14px;
+  text-align: left;
+}
+
+h3.catListTitle {
+  color: #FFFFFF;
+  background-color: #F1AAA6;
+  text-indent: 2px;
+}
+
+#calendar {
+  margin-top: 16px;
+  text-align: center;
+}
+
+#footer {
+  background: #E8E8E8;
+  border: 1px solid #D9DBE1;
+  border-width: 1px;
+  height: 60px;
+  line-height: 60px;
+  color: #586F76;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 10px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+/**************************************************************************
+  article content style
+**************************************************************************/
+.postBody {
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #D9DBE1;
+}
+
+.feedbackItem {
+  padding: 8px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.post {
+  padding-top: 1px;
+  margin-top: 20px;
+  border: 1px solid #D9DBE1;
+  border-radius: 8px;
+}
+
+#cnblogs_post_body h1 h2 h3 h4 {
+  margin: 1em 0 0.5em 0;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+  position: relative;
+  line-height: 40px;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+}
+
+#cnblogs_post_body h1 {
+  color: #399AB2;
+  font-size: 28px;
+  border-bottom: 2px solid rgba(53, 86, 129, 0.3);
+}
+
+#cnblogs_post_body h2 {
+  color: #60497C;
+  font-size: 24px;
+  border-bottom: 2px solid rgba(53, 86, 129, 0.3);
+}
+
+#cnblogs_post_body h3 {
+  font-size: 22px;
+  color: #346093;
+}
+
+#cnblogs_post_body h4 {
+  font-size: 18px;
+  color: #78943A;
+}
+
+/**
+ * signature
+ */
+#cnblogs_post_body #signature {
+  margin-top: 20px;
+  background-color: #AED7ED;
+  border-radius: 16px;
+  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+}
+
+/**
+ * feedback
+ */
+#div_digg {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  border: 2px solid #ECD7B1;
+  padding: 10px;
+  width: 140px;
+  background-color: #fff;
+  border-radius: 5px 5px 5px 5px !important;
+  box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+}
