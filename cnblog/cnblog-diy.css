@@ -101,8 +101,7 @@ blockquote {
  */
 #navigator {
   background: #E8E8E8;
-  border: 1px solid #D9DBE1;
-  border-width: 1px;
+  border: 2px solid #D9DBE1;
   height: 40px;
   line-height: 40px;
   color: #999999;
@@ -122,6 +121,19 @@ blockquote {
   margin-right: 20px;
   font-size: 16px;
   font-weight: bold;
+}
+
+/**
+ * 自动生成的目录的样式
+ */
+div#navCategory blockquote {
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: whitesmoke;
+  border-left: 6px solid #B4B4B4;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
 }
 
 /**
@@ -345,4 +357,46 @@ h3.catListTitle {
   background-color: #F5F5F4;
   word-wrap: break-word;
   overflow: hidden;
+}
+
+.timeline-comment {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DA;
+  border-radius: 3px;
+}
+
+.feedback_area_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #DE6F64;
+}
+
+/**
+ * 标签
+ */
+div#EntryTag a {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  margin: 0 0.5em 0.5em 0;
+  white-space: nowrap;
+  background-color: #f1f8ff;
+  border-radius: 8px;
+}
+
+div#EntryTag a:hover {
+  background-color: #FFEBCC;
+}
+
+div#BlogPostCategory a {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  margin: 0 0.5em 0.5em 0;
+  white-space: nowrap;
+  background-color: #f1f8ff;
+  border-radius: 8px;
+}
+
+div#BlogPostCategory a:hover {
+  background-color: #FFEBCC;
 }
