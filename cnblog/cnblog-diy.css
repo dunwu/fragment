@@ -7,20 +7,20 @@
 }
 
 body {
-  color: #586F76;
-  background: #FDF6E3;
+  color: #586f76;
+  background: #fdf6e3;
   font-family: Verdana, Arial, Helvetica, sans-serif, "微软雅黑";
   font-size: 13px;
   line-height: 1.8;
 }
 
 a {
-  color: #399AB2;
+  color: #399ab2;
   text-decoration: none;
 }
 
 a:hover {
-  color: #FE4165;
+  color: #fe4165;
 }
 
 img {
@@ -33,34 +33,32 @@ li {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 blockquote {
-  background-color: #AED7ED;
+  background-color: #aed7ed;
   border-radius: 16px;
 }
 
 .cnblogs_code {
-  background-color: #FFFFE5 !important;
+  background-color: #f6f8fa !important;
   border-radius: 10px;
-}
-
-.cnblogs_code div {
-  background-color: #FFFFE5 !important;
+  box-shadow: 1px 1px 1px #888888;
 }
 
 .cnblogs-markdown code {
-  background-color: #FFFFE5 !important;
+  background-color: #f6f8fa !important;
+  box-shadow: 1px 1px 1px #888888;
 }
 
 #cnblogs_post_body th, .cnblogs-post-body th {
-  background-color: #C4E1B6 !important;
+  background-color: #0eb8b7 !important;
   font-weight: bold;
 }
 
 #cnblogs_post_body td, .cnblogs-post-body td {
-  background-color: #FFFFE5 !important;
+  background-color: #d2f6ea !important;
 }
 
 /**************************************************************************
@@ -87,7 +85,7 @@ blockquote {
 
 #Header1_HeaderTitle {
   font-size: 24px;
-  color: #DE6F64;
+  color: #de6f64;
   font-family: "隶书", serif;
 }
 
@@ -100,8 +98,8 @@ blockquote {
  * navigator
  */
 #navigator {
-  background: #E8E8E8;
-  border: 2px solid #D9DBE1;
+  background: #e8e8e8;
+  border: 2px solid #d9dbe1;
   height: 40px;
   line-height: 40px;
   color: #999999;
@@ -109,6 +107,7 @@ blockquote {
   padding-right: 5px;
   padding-top: 2px;
   border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
 }
 
 #navList {
@@ -130,7 +129,7 @@ div#navCategory blockquote {
   padding: 20px;
   margin-bottom: 25px;
   background-color: whitesmoke;
-  border-left: 6px solid #B4B4B4;
+  border-left: 6px solid #b4b4b4;
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
@@ -162,7 +161,7 @@ div#navCategory blockquote {
 }
 
 .day {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #cccccc;
   border-radius: 16px;
   margin: 20px 0px;
 }
@@ -175,14 +174,15 @@ div#navCategory blockquote {
 /* article list - article title */
 .postTitle {
   padding: 10px 0 10px 20px;
-  border-bottom: 1px solid #CCCCCC;
-  font-size: 20px;
+  border-bottom: 1px solid #cccccc;
+  font-size: 22px;
   font-weight: bold;
+  text-shadow: 0 -1px 8px rgba(0, 0, 0, 0.4);
 }
 
 .postCon {
   padding: 20px 20px 20px;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
 }
 
 .postDesc {
@@ -204,26 +204,24 @@ div#navCategory blockquote {
   float: left;
   border: none;
   overflow: hidden;
-  padding: 0;
+  padding: 5px;
 }
 
 #sideBarMain {
   margin-top: 20px;
 }
 
-#sideBar h3 {
-  padding-left: 10px;
-}
-
 #sideBar h3, #MyIng .ing_title {
   margin: 10px 0 10px 0;
   font-size: 14px;
   text-align: left;
+  padding-left: 10px;
+  box-shadow: 3px 3px 2px #586f76;
 }
 
 h3.catListTitle {
-  color: #FFFFFF;
-  background-color: #F1AAA6;
+  color: #ffffff;
+  background-color: #f1aaa6;
   text-indent: 2px;
 }
 
@@ -235,7 +233,7 @@ h3.catListTitle {
 #footer {
   height: 60px;
   line-height: 60px;
-  color: #586F76;
+  color: #586f76;
   text-align: center;
   padding: 10px 5px 0 15px;
   border-radius: 8px 8px 8px 8px;
@@ -246,20 +244,21 @@ h3.catListTitle {
 **************************************************************************/
 .postBody {
   padding: 10px 20px 10px;
-  border-bottom: 1px solid #D9DBE1;
-  background-color: #FCFCFA;
+  border-bottom: 1px solid #d9dbe1;
+  background-color: #fcfcfa;
 }
 
 .feedbackItem {
   padding: 8px;
-  border-bottom: 1px dotted #CCCCCC;
+  border-bottom: 1px dotted #cccccc;
 }
 
 .post {
   padding-top: 1px;
   margin-top: 20px;
-  border: 1px solid #D9DBE1;
+  border: 1px solid #d9dbe1;
   border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
 }
 
 #cnblogs_post_body h1 h2 h3 h4 {
@@ -268,29 +267,33 @@ h3.catListTitle {
   font-family: 'Titillium Web', sans-serif;
   position: relative;
   line-height: 40px;
-  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 }
 
 #cnblogs_post_body h1 {
-  color: #399AB2;
-  font-size: 28px;
+  color: #399ab2;
+  font-size: 22px;
   border-bottom: 2px solid rgba(53, 86, 129, 0.3);
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 }
 
 #cnblogs_post_body h2 {
-  color: #60497C;
-  font-size: 24px;
+  color: #60497c;
+  font-size: 20px;
   border-bottom: 2px solid rgba(53, 86, 129, 0.3);
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 }
 
 #cnblogs_post_body h3 {
-  font-size: 22px;
+  font-size: 18px;
   color: #346093;
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 }
 
 #cnblogs_post_body h4 {
-  font-size: 18px;
-  color: #78943A;
+  font-size: 16px;
+  color: #78943a;
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 }
 
 /**
@@ -298,7 +301,7 @@ h3.catListTitle {
  */
 #cnblogs_post_body #signature {
   margin-top: 20px;
-  background-color: #AED7ED;
+  background-color: #aed7ed;
   border-radius: 16px;
   padding: 10px 20px 10px 20px;
   font-size: 14px;
@@ -311,12 +314,12 @@ h3.catListTitle {
   position: fixed;
   bottom: 10px;
   right: 15px;
-  border: 2px solid #ECD7B1;
+  border: 2px solid #ecd7b1;
   padding: 10px;
   width: 140px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px 5px 5px 5px !important;
-  box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+  box-shadow: 0 0 0 1px #5f5a4b, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
 }
 
 /**
@@ -333,16 +336,17 @@ h3.catListTitle {
 
 .feedbackItem {
   padding: 8px;
-  border-bottom: 1px dotted #CCCCCC;
+  border-bottom: 1px dotted #cccccc;
 }
 
 .body_right img {
   width: 50px;
   height: 50px;
-  border-radius: 40px;
+  border-radius: 8px;
   transition: all 0.5s ease-out;
   margin-right: 20px;
-  background-color: #F5F5F4;
+  background-color: #f5f5f4;
+  box-shadow: 1px 1px 2px #586f76;
 }
 
 .feedbackManage {
@@ -350,26 +354,28 @@ h3.catListTitle {
 }
 
 .blog_comment_body {
-  border: 1px dashed #399AB2;
+  border: 1px none #888888;
   border-radius: 15px;
   padding: 10px;
   width: 75%;
-  background-color: #F5F5F4;
-  word-wrap: break-word;
-  overflow: hidden;
+  box-shadow: 1px 1px 2px #888888;
+  background: -webkit-linear-gradient(#dbd9cc, #f2f0e4);
+  background: -o-linear-gradient(#dbd9cc, #f2f0e4);
+  background: -moz-linear-gradient(#dbd9cc, #f2f0e4);
+  background: linear-gradient(#dbd9cc, #f2f0e4);
 }
 
 .timeline-comment {
   position: relative;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D5DA;
+  background-color: #ffffff;
+  border: 1px solid #d1d5da;
   border-radius: 3px;
 }
 
 .feedback_area_title {
   font-size: 18px;
   font-weight: 600;
-  color: #DE6F64;
+  color: #de6f64;
 }
 
 /**
@@ -385,7 +391,7 @@ div#EntryTag a {
 }
 
 div#EntryTag a:hover {
-  background-color: #FFEBCC;
+  background-color: #ffebcc;
 }
 
 div#BlogPostCategory a {
@@ -398,5 +404,5 @@ div#BlogPostCategory a {
 }
 
 div#BlogPostCategory a:hover {
-  background-color: #FFEBCC;
+  background-color: #ffebcc;
 }
