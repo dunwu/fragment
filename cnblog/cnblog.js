@@ -7,7 +7,8 @@ function addImage() {
                          <span class=\'top\'></span>';
   $('.blog_comment_body').append(spen_html);
 
-  $('.blog_comment_body').before('<div class=\'body_right\' style=\'float: left;\'><a target=\'_blank\'><img  /></a></div>');
+  $('.blog_comment_body')
+    .before('<div class=\'body_right\' style=\'float: left;\'><a target=\'_blank\'><img  /></a></div>');
   var feedbackCon = $('.feedbackCon').addClass('clearfix');
   for (var i = 0; i < feedbackCon.length; i++) {
     var span = $(feedbackCon[i]).find('span:last')[0].innerHTML || 'http://pic.cnitblog.com/face/sample_face.gif';
@@ -93,7 +94,7 @@ function GenerateContentList() {
 
   var content = '<a name="_labelTop"></a>';
   content += '<div id="navCategory">';
-  content += '<blockquote><p style="font-size: 18pt; color:#A2B4BA"><b>目录</b></p>';
+  content += '<blockquote><p style="font-size: 18pt; color:#a2b4ba"><b>目录</b></p>';
   content += '<div>';
 
   for (var i = 0; i < nodes.length; i++) {
@@ -106,9 +107,11 @@ function GenerateContentList() {
     } else if (nodes[i].tagName === 'H2') {
       item = '<a style="font-size:16px" href="#' + resolvedTitle + '">&emsp;&emsp;' + $(nodes[i]).text() + '</a><br>';
     } else if (nodes[i].tagName === 'H3') {
-      item = '<a style="font-size:14px" href="#' + resolvedTitle + '">&emsp;&emsp;&emsp;&emsp;' + $(nodes[i]).text() + '</a><br>';
+      item = '<a style="font-size:14px" href="#' + resolvedTitle + '">&emsp;&emsp;&emsp;&emsp;' + $(nodes[i]).text() +
+        '</a><br>';
     } else if (nodes[i].tagName === 'H4') {
-      item = '<a style="font-size:12px" href="#' + resolvedTitle + '">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' + $(nodes[i]).text() + '</a><br>';
+      item = '<a style="font-size:12px" href="#' + resolvedTitle + '">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' +
+        $(nodes[i]).text() + '</a><br>';
     }
 
     content += item;
@@ -119,12 +122,28 @@ function GenerateContentList() {
     $($('#cnblogs_post_body')[0]).prepend(content);
   }
 
-  $($('#cnblogs_post_body')[len - 1]).append('<div id=\'signature\'><p>作者：<a href=\'http://www.cnblogs.com/jingmoxukong/\'>静默虚空</a></br>欢迎任何形式的转载，但请务必注明出处。</br>限于本人水平，如果文章和代码有表述不当之处，还请不吝赐教。</p></div>');
+  $($('#cnblogs_post_body')[len - 1])
+    .append('<div id=\'signature\'><p>作者：<a href=\'http://www.cnblogs.com/jingmoxukong/\'>静默虚空</a></br>欢迎任何形式的转载，但请务必注明出处。</br>限于本人水平，如果文章和代码有表述不当之处，还请不吝赐教。</p></div>');
 }
-GenerateContentList();
 /*************************************************************************************
  * 根据文章中标题自动生成目录 END
  *************************************************************************************/
+
+function generateTagClouds() {
+  $('.catListTag>ul').wrap('<div class=\'wrap\' ></div>').parent().css({ 'width': '240px', 'height': '240px' });
+
+  var options = {
+    'range': [-200, 300],
+    'gravity': -10,
+    'xPos': 0.5,
+    'yPos': 0.5,
+    'gravityVector': [0, 0, 1],
+    'interval': 100,
+    'hoverGravityFactor': 0
+  };
+
+  $('div.wrap').starfieldTagCloud(options);
+}
 
 // 自定义定时器[当元素加载完成是执行回调函数]
 function customTimer(inpId, fn) {
@@ -154,6 +173,9 @@ $(function () {
     $('#div_digg').append(div_html);
     //tbCommentBody
   });
+
+  GenerateContentList();
+  customTimer('.catListTag', generateTagClouds);
 
   //添加 评论区的 形象照
   MobileComment();//移动评论
