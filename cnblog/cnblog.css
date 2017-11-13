@@ -405,3 +405,65 @@ div#BlogPostCategory a {
 div#BlogPostCategory a:hover {
   background-color: #ffebcc;
 }
+
+/**
+ * 广告
+ */
+.c_ad_block {
+  display: none;
+}
+#ad_t2 {
+  display: none;
+}
+
+@media only screen and (max-width: 736px) {
+  #navigator {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  #mainContent {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  #sideBar {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  .newsItem {
+    display: none;
+  }
+
+  #sidebar_search {
+    display: none;
+  }
+
+  #blogCalendar {
+    display: none;
+  }
+
+  #blog-calendar {
+    display: none;
+  }
+
+  #sidebar_recentcomments {
+    display: none;
+  }
+
+  #sidebar_topviewedposts {
+    display: none;
+  }
+
+  #sidebar_topcommentedposts {
+    display: none;
+  }
+
+  #sidebar_topdiggedposts {
+    display: none;
+  }
+}
