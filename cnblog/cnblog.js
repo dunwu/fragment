@@ -145,22 +145,6 @@ function generateTagClouds() {
   $('div.wrap').starfieldTagCloud(options);
 }
 
-function generateBlogTitle() {
-  var root=document.createElement("div");
-  root.id='ui';
-  for (var i=0; i < 50; i++) {
-    var node=document.createElement("div");
-    node.className='text';
-    node.innerHTML='静默虚空';
-    root.appendChild(node);
-  }
-  document.getElementById("blogTitle").appendChild(root);
-
-  var subTitle=document.createElement("h2");
-  subTitle.innerHTML='Talk is cheap, show me the code.';
-  document.getElementById("blogTitle").appendChild(subTitle);
-}
-
 // 自定义定时器[当元素加载完成是执行回调函数]
 function customTimer(inpId, fn) {
   if ($(inpId).length) {
@@ -192,7 +176,6 @@ $(function () {
 
   GenerateContentList();
 
-  customTimer('#blogTitle', generateBlogTitle);
   customTimer('.catListTag', generateTagClouds);
 
   //添加 评论区的 形象照
