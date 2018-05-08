@@ -106,12 +106,6 @@ function GenerateContentList() {
       item = '<a style="font-size:18px" href="#' + resolvedTitle + '">' + $(nodes[i]).text() + '</a><br>';
     } else if (nodes[i].tagName === 'H2') {
       item = '<a style="font-size:16px" href="#' + resolvedTitle + '">&emsp;&emsp;' + $(nodes[i]).text() + '</a><br>';
-    } else if (nodes[i].tagName === 'H3') {
-      item = '<a style="font-size:14px" href="#' + resolvedTitle + '">&emsp;&emsp;&emsp;&emsp;' + $(nodes[i]).text() +
-        '</a><br>';
-    } else if (nodes[i].tagName === 'H4') {
-      item = '<a style="font-size:12px" href="#' + resolvedTitle + '">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' +
-        $(nodes[i]).text() + '</a><br>';
     }
 
     content += item;
