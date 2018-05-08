@@ -7,7 +7,7 @@
 }
 
 body {
-  color: #586f76;
+  color: #586F76;
   background: url(http://images.cnblogs.com/cnblogs_com/jingmoxukong/709053/o_theme-yellow.jpg) no-repeat center 0 #FFF4E6;
   font-family: Verdana, Arial, Helvetica, sans-serif, "微软雅黑";
   font-size: 13px;
@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #399ab2;
+  color: #399AB2;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fe4165;
+  color: #FE4165;
 }
 
 img {
@@ -37,28 +37,41 @@ p {
 }
 
 blockquote {
-  background-color: #aed7ed;
+  background-color: #AED7ED;
   border-radius: 16px;
 }
 
 .cnblogs_code {
-  background-color: #f6f8fa !important;
+  background-color: #F6F8FA !important;
   border-radius: 10px;
   box-shadow: 1px 1px 1px #888888;
 }
 
 .cnblogs-markdown code {
-  background-color: #f6f8fa !important;
+  background-color: #F6F8FA !important;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+/**************************************************************************
+  table style
+**************************************************************************/
+
+#cnblogs_post_body table, .cnblogs-post-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  border-radius: 10px;
   box-shadow: 1px 1px 1px #888888;
 }
 
 #cnblogs_post_body th, .cnblogs-post-body th {
-  background-color: #0eb8b7 !important;
   font-weight: bold;
+  font-size: 16px;
 }
 
-#cnblogs_post_body td, .cnblogs-post-body td {
-  background-color: #d2f6ea !important;
+#cnblogs_post_body tr:nth-child(2n), .cnblogs-post-body tr:nth-child(2n) {
+  background-color: #F6F4F0 !important;
 }
 
 /**************************************************************************
@@ -85,7 +98,7 @@ blockquote {
 
 #Header1_HeaderTitle {
   font-size: 24px;
-  color: #de6f64;
+  color: #DE6F64;
   font-family: "隶书", serif;
 }
 
@@ -98,7 +111,7 @@ blockquote {
  * navigator
  */
 #navigator {
-  background: #e8e8e8;
+  background: #E8E8E8;
   height: 40px;
   line-height: 40px;
   color: #999999;
@@ -128,7 +141,7 @@ div#navCategory blockquote {
   padding: 20px;
   margin-bottom: 25px;
   background-color: whitesmoke;
-  border-left: 6px solid #b4b4b4;
+  border-left: 6px solid #B4B4B4;
   font-size: 16px;
   font-weight: normal;
   line-height: 30px;
@@ -160,7 +173,7 @@ div#navCategory blockquote {
 }
 
 .day {
-  border: 1px solid #cccccc;
+  border: 1px solid #CCCCCC;
   border-radius: 16px;
   margin: 20px 0px;
 }
@@ -173,7 +186,7 @@ div#navCategory blockquote {
 /* article list - article title */
 .postTitle {
   padding: 10px 0 10px 20px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #CCCCCC;
   font-size: 22px;
   font-weight: bold;
   text-shadow: 0 -1px 8px rgba(0, 0, 0, 0.4);
@@ -181,7 +194,7 @@ div#navCategory blockquote {
 
 .postCon {
   padding: 20px 20px 20px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 .postDesc {
@@ -215,12 +228,12 @@ div#navCategory blockquote {
   font-size: 14px;
   text-align: left;
   padding-left: 10px;
-  box-shadow: 3px 3px 2px #586f76;
+  box-shadow: 3px 3px 2px #586F76;
 }
 
 h3.catListTitle {
-  color: #ffffff;
-  background-color: #f1aaa6;
+  color: #FFFFFF;
+  background-color: #F1AAA6;
   text-indent: 2px;
 }
 
@@ -232,7 +245,7 @@ h3.catListTitle {
 #footer {
   height: 60px;
   line-height: 60px;
-  color: #586f76;
+  color: #586F76;
   text-align: center;
   padding: 10px 5px 0 15px;
   border-radius: 8px 8px 8px 8px;
@@ -243,19 +256,19 @@ h3.catListTitle {
 **************************************************************************/
 .postBody {
   padding: 10px 20px 10px;
-  border-bottom: 1px solid #d9dbe1;
-  background-color: #fcfcfa;
+  border-bottom: 1px solid #D9DBE1;
+  background-color: #FCFCFA;
 }
 
 .feedbackItem {
   padding: 8px;
-  border-bottom: 1px dotted #cccccc;
+  border-bottom: 1px dotted #CCCCCC;
 }
 
 .post {
   padding-top: 1px;
   margin-top: 20px;
-  border: 1px solid #d9dbe1;
+  border: 1px solid #D9DBE1;
   border-radius: 8px;
   box-shadow: 3px 3px 3px #888888;
 }
@@ -270,14 +283,14 @@ h3.catListTitle {
 }
 
 #cnblogs_post_body h1 {
-  color: #399ab2;
+  color: #399AB2;
   font-size: 22px;
   border-bottom: 2px solid rgba(53, 86, 129, 0.3);
   text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 }
 
 #cnblogs_post_body h2 {
-  color: #60497c;
+  color: #60497C;
   font-size: 20px;
   border-bottom: 2px solid rgba(53, 86, 129, 0.3);
   text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
@@ -291,7 +304,7 @@ h3.catListTitle {
 
 #cnblogs_post_body h4 {
   font-size: 16px;
-  color: #78943a;
+  color: #78943A;
   text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -300,7 +313,7 @@ h3.catListTitle {
  */
 #cnblogs_post_body #signature {
   margin-top: 20px;
-  background-color: #aed7ed;
+  background-color: #AED7ED;
   border-radius: 16px;
   padding: 10px 20px 10px 20px;
   font-size: 14px;
@@ -313,12 +326,12 @@ h3.catListTitle {
   position: fixed;
   bottom: 10px;
   right: 15px;
-  border: 2px solid #ecd7b1;
+  border: 2px solid #ECD7B1;
   padding: 10px;
   width: 140px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 5px 5px 5px 5px !important;
-  box-shadow: 0 0 0 1px #5f5a4b, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+  box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
 }
 
 /**
@@ -335,7 +348,7 @@ h3.catListTitle {
 
 .feedbackItem {
   padding: 8px;
-  border-bottom: 1px dotted #cccccc;
+  border-bottom: 1px dotted #CCCCCC;
 }
 
 .body_right img {
@@ -344,8 +357,8 @@ h3.catListTitle {
   border-radius: 8px;
   transition: all 0.5s ease-out;
   margin-right: 20px;
-  background-color: #f5f5f4;
-  box-shadow: 1px 1px 2px #586f76;
+  background-color: #F5F5F4;
+  box-shadow: 1px 1px 2px #586F76;
 }
 
 .feedbackManage {
@@ -358,23 +371,23 @@ h3.catListTitle {
   padding: 10px;
   width: 75%;
   box-shadow: 1px 1px 2px #888888;
-  background: -webkit-linear-gradient(#dbd9cc, #f2f0e4);
-  background: -o-linear-gradient(#dbd9cc, #f2f0e4);
-  background: -moz-linear-gradient(#dbd9cc, #f2f0e4);
-  background: linear-gradient(#dbd9cc, #f2f0e4);
+  background: -webkit-linear-gradient(#DBD9CC, #F2F0E4);
+  background: -o-linear-gradient(#DBD9CC, #F2F0E4);
+  background: -moz-linear-gradient(#DBD9CC, #F2F0E4);
+  background: linear-gradient(#DBD9CC, #F2F0E4);
 }
 
 .timeline-comment {
   position: relative;
-  background-color: #ffffff;
-  border: 1px solid #d1d5da;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DA;
   border-radius: 3px;
 }
 
 .feedback_area_title {
   font-size: 18px;
   font-weight: 600;
-  color: #de6f64;
+  color: #DE6F64;
 }
 
 /**
@@ -385,12 +398,12 @@ div#EntryTag a {
   padding: 0.3em 0.6em;
   margin: 0 0.5em 0.5em 0;
   white-space: nowrap;
-  background-color: #f1f8ff;
+  background-color: #F1F8FF;
   border-radius: 8px;
 }
 
 div#EntryTag a:hover {
-  background-color: #ffebcc;
+  background-color: #FFEBCC;
 }
 
 div#BlogPostCategory a {
@@ -398,12 +411,12 @@ div#BlogPostCategory a {
   padding: 0.3em 0.6em;
   margin: 0 0.5em 0.5em 0;
   white-space: nowrap;
-  background-color: #f1f8ff;
+  background-color: #F1F8FF;
   border-radius: 8px;
 }
 
 div#BlogPostCategory a:hover {
-  background-color: #ffebcc;
+  background-color: #FFEBCC;
 }
 
 /**
@@ -412,6 +425,7 @@ div#BlogPostCategory a:hover {
 .c_ad_block {
   display: none;
 }
+
 #ad_t2 {
   display: none;
 }
