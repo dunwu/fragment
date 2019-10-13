@@ -56,7 +56,8 @@ blockquote {
   table style
 **************************************************************************/
 
-#cnblogs_post_body table, .cnblogs-post-body table {
+#cnblogs_post_body table,
+.cnblogs-post-body table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 4px;
@@ -65,12 +66,14 @@ blockquote {
   box-shadow: 1px 1px 1px #888888;
 }
 
-#cnblogs_post_body th, .cnblogs-post-body th {
+#cnblogs_post_body th,
+.cnblogs-post-body th {
   font-weight: bold;
   font-size: 16px;
 }
 
-#cnblogs_post_body tr:nth-child(2n), .cnblogs-post-body tr:nth-child(2n) {
+#cnblogs_post_body tr:nth-child(2n),
+.cnblogs-post-body tr:nth-child(2n) {
   background-color: #F6F4F0 !important;
 }
 
@@ -100,6 +103,27 @@ blockquote {
   font-size: 24px;
   color: #DE6F64;
   font-family: "隶书", serif;
+  background-image: -webkit-linear-gradient(
+      left,
+      #FFDCB4,
+      #B96972 25%,
+      #E88A57 50%,
+      #804170 75%,
+      #A596CD
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: masked-animation 1.5s infinite linear;
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 #blogTitle h2 {
@@ -201,7 +225,8 @@ div#navCategory blockquote {
   padding-right: 20px;
 }
 
-.postDesc, .entrylistItemPostDesc {
+.postDesc,
+.entrylistItemPostDesc {
   color: #999999;
   text-align: right;
   padding-top: 10px;
@@ -223,7 +248,8 @@ div#navCategory blockquote {
   margin-top: 20px;
 }
 
-#sideBar h3, #MyIng .ing_title {
+#sideBar h3,
+#MyIng .ing_title {
   margin: 10px 0 10px 0;
   font-size: 14px;
   text-align: left;
@@ -276,7 +302,7 @@ h3.catListTitle {
 #cnblogs_post_body h1 h2 h3 h4 {
   margin: 1em 0 0.5em 0;
   font-weight: 600;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   position: relative;
   line-height: 40px;
   text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
@@ -479,5 +505,35 @@ div#BlogPostCategory a:hover {
 
   #sidebar_topdiggedposts {
     display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .markdown-section pre > code {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .markdown-section pre > code {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  pre:after {
+    content: "" !important;
+  }
+}
+
+@media (min-width: 600px) {
+  pre code {
+    padding-left: 20px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  pre {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }
