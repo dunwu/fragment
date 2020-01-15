@@ -122,7 +122,7 @@ function GenerateContentList() {
   }
 
   $($('#cnblogs_post_body')[len - 1])
-  .append('<div id=\'signature\'><p>作者：<a href=\'http://www.cnblogs.com/jingmoxukong/\'>静默虚空</a></br>欢迎任何形式的转载，但请务必注明出处。</br>限于本人水平，如果文章和代码有表述不当之处，还请不吝赐教。</p></div>')
+  .append('<div id=\'signature\'><p>作者：<a href=\'https://www.cnblogs.com/summerday152/\'>天乔巴夏丶</a></br>欢迎任何形式的转载，但请务必注明出处。</br>限于本人水平，如果文章和代码有表述不当之处，还请不吝赐教。</p></div>')
 }
 
 /*************************************************************************************
